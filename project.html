@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <style>
+        header{
+            background-color: white;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid white;
+        }
+        h1{
+            background-color: navy;
+            padding: 50px;
+            text-align: center;
+        }
+        .hero{
+            text-align: center;
+            padding: 10px 10px;
+            background-color: navy;
+            color: white;
+        }
+        .hero h1{
+            font-size: 42px;
+        }
+        .hero p{
+            margin-top: 5px;
+        }
+        .btn{
+            margin-top: 20px;
+            padding: 12px;
+            border: 1px solid rgba(59, 108, 241, 0.63);
+            background: rgb(255, 255, 255);
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(255, 0, 0);
+            width: 100px;
+            height: 50px;
+        }
+        #about{
+            margin-left: 10vw;
+            margin-right: 10vw;
+            padding: 10px;
+        }
+        h2{
+            border-bottom: 2px solid black;
+        }
+        #skills{
+            display: grid;
+            margin-left: 10vw;
+            margin-right: 10vw;
+            padding: 10px;
+        }
+        .s{
+            border: 2px solid black;
+            padding: 12px;
+            border-radius: 10px;
+            background-color: bisque;
+        }
+        .pojects{
+            display: flex;
+            margin-left: 10vw;
+            margin-right: 10vw;
+            padding: 10px;
+        }
+        h3{
+            border-bottom: 2px solid black;
+        }
+        .p{
+            display: flex;
+            gap: 10px;
+        }
+        .c{
+            border: 2px solid black;
+            width: 20vw;
+            height: 10vw;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 id="StudentName">StudentName</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skils">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1 id="mainTitel">Your name</h1>
+        <p id="roleText">B.Tech 1st Year | Aspiring Full-Stack Developer</p>
+
+        <button class="btn" onclick="updateIntro()">Update Intro</button>
+        <a href="https://mail.google.com/mail/">
+            <button class="btn">Download Resume</button>
+        </a>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p id="text">I am BSY from CMK. I'm studyibg B.Tech 2nd year spl CSE in Pace ITS Ongole. I enjoy building websites using core web technologies. </p>
+
+    </section>
+    <section id="skills">
+        <h2>Technical skills</h2>
+        <div class="skills">
+        <button>HTML</button>&nbsp;&nbsp;
+        <button>Python</button>&nbsp;&nbsp;
+        <button>Java</button>&nbsp;&nbsp;
+        <button>CSS</button>&nbsp;&nbsp;
+        <button>SQL</button>&nbsp;&nbsp;
+        </div>
+    </section>
+
+    <section id="projects">
+        <h3>Projects</h3>
+        <div class="p">
+        <div class="c">
+            <h4>Student Portfolio</h4>
+            <p id="text">Personal portfolio website using <br>HTML CSS and JavaScript</p>
+            <button>view</button>
+        </div>
+        <div class="c">
+            <h4>JS Calculator</h4>
+            <p id="text">Calculator using DOM events <br> and functions</p>
+            <button>view</button>
+        </div>
+        <div class="c">
+            <h4>Student Result App</h4>
+            <p id="text">Marks calculator and grade <br>display</p>
+            <button>view</button>
+        </div>
+    </div>
+    </section>
+    <section id="Contact">
+        <h5>Contact Details</h5>
+        <div class="C">
+        <div class="m">
+            <input type="email" placeholder="sai@gmail.com">
+            <input type="Phone" placeholder="+91 88XXXXXXXX">
+            <input type="Location" placeholder="Naidupalem,CMK">
+            <input type="Github" placeholder="github.charan">
+
+        </div>
+    </div>
+    </section>
+</body>
+</html>
