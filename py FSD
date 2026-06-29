@@ -1,0 +1,12 @@
+class Car:
+    def __init__(self, color, brand, model):
+        self.color = color
+        self.brand = brand
+        self.model = model
+
+    def car_info(self):
+        print(f"This car is a {self.color} {self.brand} {self.model}.")
+
+# Example usage
+my_car = Car("Red", "Toyota", "Corolla")
+my_car.car_info()
